@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "ryan",
-    "database": "db-challenge06-fsw",
+    "database": "binar-challenge06",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
