@@ -1,8 +1,8 @@
 # Car-Management-API Challenge 06 
   
   
-# Open API Documentation with Postman:
+ Open API Documentation with Postman:
 
-# Email dan Password untuk Seeders:
+ Email dan Password untuk Seeders:
 
 
