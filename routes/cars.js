@@ -14,7 +14,7 @@ const authRegistered = require('../middleware/authRegistered')
 router.post('/add-car', authAdmins, CarController.addCar);
 
 // Endpoint Read 
-router.get('/', authAdmins, CarController.getAllCars);
+router.get('/', CarController.getAllCars);
 router.get('/true', authRegistered, CarController.getCarsTrue);
 router.get('/false', authAdmins, CarController.getCarsFalse);
 

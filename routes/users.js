@@ -14,8 +14,8 @@ const authRegistered = require('../middleware/authRegistered')
 router.get('/login', UserController.login)
 router.post('/register-member', UserController.registerMember)
 
-// Registered
-router.get('/info', authRegistered, UserController.currentUser)
+// Registered admin
+router.get('/info-user', authRegistered, UserController.currentUser)
 
 // Super Admin
 router.post('/register-admin', isSuperAdmin, UserController.registerAdmin)
