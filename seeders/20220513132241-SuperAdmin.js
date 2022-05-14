@@ -42,7 +42,7 @@ const newData = [
     "nama": "Seed-rama",
     "class": "SuperAdmin",
     "email": "seed-rama@mail.com",
-    "password": "$2b$10$QRWe0lUb.Vwy/p0eAloWnOTqpPlYKskGTls0i3Kip2nZdcEsT.Fcu", //andra-sa
+    "password": "$2b$10$QRWe0lUb.Vwy/p0eAloWnOTqpPlYKskGTls0i3Kip2nZdcEsT.Fcu", //rama
     "createdAt": new Date(),
     "updatedAt": new Date()
   }
