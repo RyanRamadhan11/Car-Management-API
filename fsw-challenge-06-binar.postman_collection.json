@@ -1,0 +1,1470 @@
+{
+	"info": {
+		"_postman_id": "988ab4ef-0bd6-41bc-bdad-5ac116935307",
+		"name": "fsw-challenge-06-binar",
+		"description": "Challenge 06 Full Stack Web Binar Acadamy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cars",
+			"item": [
+				{
+					"name": "all cars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars"
+							]
+						},
+						"description": "StartFragment\n\ndapat dilakukan oleh SuperAdmin dan Admin, dan member.\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/cars",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"data\": [\r\n        {\r\n            \"id\": 1,\r\n            \"nama\": \"Honda Civic\",\r\n            \"tipe\": \"tipe R\",\r\n            \"deskripsi\": \"Merah\",\r\n            \"ukuran\": \"Medium\",\r\n            \"available\": \"true\",\r\n            \"createdBy\": \"Seed-ryan\",\r\n            \"deletedBy\": null,\r\n            \"updatedBy\": null,\r\n            \"createdAt\": \"2022-05-13T20:06:01.999Z\",\r\n            \"updatedAt\": \"2022-05-13T20:06:01.999Z\"\r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"nama\": \"Honda Brio\",\r\n            \"tipe\": \"Hatcback\",\r\n            \"deskripsi\": \"Kuning\",\r\n            \"ukuran\": \"Small\",\r\n            \"available\": \"true\",\r\n            \"createdBy\": \"Seed-ryan\",\r\n            \"deletedBy\": null,\r\n            \"updatedBy\": null,\r\n            \"createdAt\": \"2022-05-13T20:07:55.124Z\",\r\n            \"updatedAt\": \"2022-05-13T20:07:55.124Z\"\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"nama\": \"Suzuki Ignis\",\r\n            \"tipe\": \"MVP\",\r\n            \"deskripsi\": \"Biru\",\r\n            \"ukuran\": \"Small\",\r\n            \"available\": \"true\",\r\n            \"createdBy\": \"Seed-ryan\",\r\n            \"deletedBy\": null,\r\n            \"updatedBy\": \"Seed-ryan\",\r\n            \"createdAt\": \"2022-05-13T20:09:41.970Z\",\r\n            \"updatedAt\": \"2022-05-13T20:11:00.848Z\"\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"nama\": \"Avanza\",\r\n            \"tipe\": \"Seri E\",\r\n            \"deskripsi\": \"Putih\",\r\n            \"ukuran\": \"Large\",\r\n            \"available\": \"false\",\r\n            \"createdBy\": \"Seed-ryan\",\r\n            \"deletedBy\": \"Seed-ryan\",\r\n            \"updatedBy\": null,\r\n            \"createdAt\": \"2022-05-13T20:08:53.545Z\",\r\n            \"updatedAt\": \"2022-05-13T20:12:03.665Z\"\r\n        }\r\n    ]\r\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/carshhhgg",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"carshhhgg"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "erorr 404 not found\r\n\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n\t<meta charset=\"utf-8\">\r\n\t<title>Error</title>\r\n</head>"
+						}
+					]
+				},
+				{
+					"name": "cars true",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InppZGFuQG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkZHFaSzVLR2NNeklTZXU5bUo2WlBTT3BNU3FmQVNCeEVocklZNjIySDFIY3lvakV2MVZ4MlMiLCJpYXQiOjE2NTI0NzMwNjZ9.gMYypcTZPJwTNtxh5slum9ImbMybc9qwO15vmWBFKbQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/cars/true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"true"
+							]
+						},
+						"description": "StartFragment\n\ndapat dilakukan oleh user yang teregister SuperAdmin, Admin, dan Member.\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlZWQtcnlhbkBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFk1M3ZvR0xmWUs5UXpHaGdsMm5lNU9wTGJ1aHlrSk05Qk1xdTB3eFBGd1ZqWmthRnF0TDBTIiwiaWF0IjoxNjUyNDcyMjMzfQ.dI2kwzz3t3R191AmpD8UqyhZG3gk7Z6YfufC1giDTX0",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/cars/true",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"true"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"data\": [\r\n        {\r\n            \"id\": 1,\r\n            \"nama\": \"Honda Civic\",\r\n            \"tipe\": \"tipe R\",\r\n            \"deskripsi\": \"Merah\",\r\n            \"ukuran\": \"Medium\",\r\n            \"available\": \"true\",\r\n            \"createdBy\": \"Seed-ryan\",\r\n            \"deletedBy\": null,\r\n            \"updatedBy\": null,\r\n            \"createdAt\": \"2022-05-13T20:06:01.999Z\",\r\n            \"updatedAt\": \"2022-05-13T20:06:01.999Z\"\r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"nama\": \"Honda Brio\",\r\n            \"tipe\": \"Hatcback\",\r\n            \"deskripsi\": \"Kuning\",\r\n            \"ukuran\": \"Small\",\r\n            \"available\": \"true\",\r\n            \"createdBy\": \"Seed-ryan\",\r\n            \"deletedBy\": null,\r\n            \"updatedBy\": null,\r\n            \"createdAt\": \"2022-05-13T20:07:55.124Z\",\r\n            \"updatedAt\": \"2022-05-13T20:07:55.124Z\"\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"nama\": \"Suzuki Ignis\",\r\n            \"tipe\": \"MVP\",\r\n            \"deskripsi\": \"Biru\",\r\n            \"ukuran\": \"Small\",\r\n            \"available\": \"true\",\r\n            \"createdBy\": \"Seed-ryan\",\r\n            \"deletedBy\": null,\r\n            \"updatedBy\": \"Seed-ryan\",\r\n            \"createdAt\": \"2022-05-13T20:09:41.970Z\",\r\n            \"updatedAt\": \"2022-05-13T20:11:00.848Z\"\r\n        }\r\n    ]\r\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "e",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/cars/true",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"true"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"name\": \"JsonWebTokenError\",\r\n    \"message\": \"jwt malformed\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "cars false",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "e",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/cars/false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"false"
+							]
+						},
+						"description": "StartFragment\n\ndapat dilakukan oleh user yang teregister SuperAdmin, Admin.\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlZWQtcnlhbkBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFk1M3ZvR0xmWUs5UXpHaGdsMm5lNU9wTGJ1aHlrSk05Qk1xdTB3eFBGd1ZqWmthRnF0TDBTIiwiaWF0IjoxNjUyNDcyMjMzfQ.dI2kwzz3t3R191AmpD8UqyhZG3gk7Z6YfufC1giDTX0",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/cars/false",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"false"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"data\": [\r\n        {\r\n            \"id\": 3,\r\n            \"nama\": \"Avanza\",\r\n            \"tipe\": \"Seri E\",\r\n            \"deskripsi\": \"Putih\",\r\n            \"ukuran\": \"Large\",\r\n            \"available\": \"false\",\r\n            \"createdBy\": \"Seed-ryan\",\r\n            \"deletedBy\": \"Seed-ryan\",\r\n            \"updatedBy\": null,\r\n            \"createdAt\": \"2022-05-13T20:08:53.545Z\",\r\n            \"updatedAt\": \"2022-05-13T20:12:03.665Z\"\r\n        }\r\n    ]\r\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "GET",
+								"header": []
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "add cars",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InppZGFuQG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkZHFaSzVLR2NNeklTZXU5bUo2WlBTT3BNU3FmQVNCeEVocklZNjIySDFIY3lvakV2MVZ4MlMiLCJpYXQiOjE2NTI0NzMwNjZ9.gMYypcTZPJwTNtxh5slum9ImbMybc9qwO15vmWBFKbQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"Isuzu D-Max\",\r\n    \"tipe\": \"SUV\",\r\n    \"deskripsi\": \"Hitam\",\r\n    \"ukuran\": \"Medium\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cars/add-car",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"add-car"
+							]
+						},
+						"description": "StartFragment\n\nyaitu hanya bisa dilakukan oleh SuperAdmin dan Admin.\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "request success by superAdmin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlZWQtcnlhbkBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFk1M3ZvR0xmWUs5UXpHaGdsMm5lNU9wTGJ1aHlrSk05Qk1xdTB3eFBGd1ZqWmthRnF0TDBTIiwiaWF0IjoxNjUyNDcyMjMzfQ.dI2kwzz3t3R191AmpD8UqyhZG3gk7Z6YfufC1giDTX0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"Honda Civic\",\r\n    \"tipe\": \"tipe R\",\r\n    \"deskripsi\": \"Merah\",\r\n    \"ukuran\": \"Medium\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/cars/add-car",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"add-car"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"message\": \"Car successfully created.\",\r\n    \"data\": {\r\n        \"id\": 1,\r\n        \"nama\": \"Honda Civic\",\r\n        \"tipe\": \"tipe R\",\r\n        \"deskripsi\": \"Merah\",\r\n        \"ukuran\": \"Medium\",\r\n        \"available\": \"true\",\r\n        \"createdBy\": \"Seed-ryan\",\r\n        \"updatedAt\": \"2022-05-13T20:06:01.999Z\",\r\n        \"createdAt\": \"2022-05-13T20:06:01.999Z\",\r\n        \"deletedBy\": null,\r\n        \"updatedBy\": null\r\n    }\r\n}"
+						},
+						{
+							"name": "request success by admin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InppZGFuQG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkZHFaSzVLR2NNeklTZXU5bUo2WlBTT3BNU3FmQVNCeEVocklZNjIySDFIY3lvakV2MVZ4MlMiLCJpYXQiOjE2NTI0NzMwNjZ9.gMYypcTZPJwTNtxh5slum9ImbMybc9qwO15vmWBFKbQ",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"Daihatsu Sigra\",\r\n    \"tipe\": \"MVP\",\r\n    \"deskripsi\": \"Kuning\",\r\n    \"ukuran\": \"Medium\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/cars/add-car",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"add-car"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"message\": \"Car successfully created.\",\r\n    \"data\": {\r\n        \"id\": 6,\r\n        \"nama\": \"Daihatsu Sigra\",\r\n        \"tipe\": \"MVP\",\r\n        \"deskripsi\": \"Kuning\",\r\n        \"ukuran\": \"Medium\",\r\n        \"available\": \"true\",\r\n        \"createdBy\": \"zidan\",\r\n        \"updatedAt\": \"2022-05-13T20:19:11.601Z\",\r\n        \"createdAt\": \"2022-05-13T20:19:11.601Z\",\r\n        \"deletedBy\": null,\r\n        \"updatedBy\": null\r\n    }\r\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "ey",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"Daihatsu Sigra\",\r\n    \"tipe\": \"MVP\",\r\n    \"deskripsi\": \"Kuning\",\r\n    \"ukuran\": \"Medium\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/cars/add-car",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"add-car"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"name\": \"JsonWebTokenError\",\r\n    \"message\": \"jwt malformed\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "update cars",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InppZGFuQG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkZHFaSzVLR2NNeklTZXU5bUo2WlBTT3BNU3FmQVNCeEVocklZNjIySDFIY3lvakV2MVZ4MlMiLCJpYXQiOjE2NTI0NzMwNjZ9.gMYypcTZPJwTNtxh5slum9ImbMybc9qwO15vmWBFKbQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"Hino Bus\",\r\n    \"tipe\": \"Hino700\",\r\n    \"deskripsi\": \"Hijau\",\r\n    \"ukuran\": \"Large\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cars/update/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"update",
+								"2"
+							]
+						},
+						"description": "StartFragment\n\nyaitu hanya bisa dilakukan oleh SuperAdmin dan Admin.\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "request success by superAdmin",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlZWQtcnlhbkBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFk1M3ZvR0xmWUs5UXpHaGdsMm5lNU9wTGJ1aHlrSk05Qk1xdTB3eFBGd1ZqWmthRnF0TDBTIiwiaWF0IjoxNjUyNDcyMjMzfQ.dI2kwzz3t3R191AmpD8UqyhZG3gk7Z6YfufC1giDTX0",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"Suzuki Ignis\",\r\n    \"tipe\": \"MVP\",\r\n    \"deskripsi\": \"Biru\",\r\n    \"ukuran\": \"Small\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/cars/update/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"update",
+										"4"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"message\": \"Car sucessfully updated.\",\r\n    \"data\": {\r\n        \"nama\": \"Suzuki Ignis\",\r\n        \"tipe\": \"MVP\",\r\n        \"deskripsi\": \"Biru\",\r\n        \"ukuran\": \"Small\"\r\n    }\r\n}"
+						},
+						{
+							"name": "request success by admin",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InppZGFuQG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkZHFaSzVLR2NNeklTZXU5bUo2WlBTT3BNU3FmQVNCeEVocklZNjIySDFIY3lvakV2MVZ4MlMiLCJpYXQiOjE2NTI0NzMwNjZ9.gMYypcTZPJwTNtxh5slum9ImbMybc9qwO15vmWBFKbQ",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"Hino Bus\",\r\n    \"tipe\": \"Hino700\",\r\n    \"deskripsi\": \"Hijau\",\r\n    \"ukuran\": \"Large\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/cars/update/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"update",
+										"2"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"message\": \"Car sucessfully updated.\",\r\n    \"data\": {\r\n        \"nama\": \"Hino Bus\",\r\n        \"tipe\": \"Hino700\",\r\n        \"deskripsi\": \"Hijau\",\r\n        \"ukuran\": \"Large\"\r\n    }\r\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyhhj",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"Hino Bus\",\r\n    \"tipe\": \"Hino700\",\r\n    \"deskripsi\": \"Hijau\",\r\n    \"ukuran\": \"Large\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/cars/update/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"update",
+										"1"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"name\": \"JsonWebTokenError\",\r\n    \"message\": \"jwt malformed\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "delete cars",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InppZGFuQG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkZHFaSzVLR2NNeklTZXU5bUo2WlBTT3BNU3FmQVNCeEVocklZNjIySDFIY3lvakV2MVZ4MlMiLCJpYXQiOjE2NTI0NzMwNjZ9.gMYypcTZPJwTNtxh5slum9ImbMybc9qwO15vmWBFKbQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/cars/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"delete",
+								"1"
+							]
+						},
+						"description": "StartFragment\n\nyaitu hanya bisa dilakukan oleh SuperAdmin dan Admin.\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "request success by superAdmin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlZWQtcnlhbkBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFk1M3ZvR0xmWUs5UXpHaGdsMm5lNU9wTGJ1aHlrSk05Qk1xdTB3eFBGd1ZqWmthRnF0TDBTIiwiaWF0IjoxNjUyNDcyMjMzfQ.dI2kwzz3t3R191AmpD8UqyhZG3gk7Z6YfufC1giDTX0",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/cars/delete/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"delete",
+										"3"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"message\": \"Car sucessfully deleted.\"\r\n}"
+						},
+						{
+							"name": "request success by admin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InppZGFuQG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkZHFaSzVLR2NNeklTZXU5bUo2WlBTT3BNU3FmQVNCeEVocklZNjIySDFIY3lvakV2MVZ4MlMiLCJpYXQiOjE2NTI0NzMwNjZ9.gMYypcTZPJwTNtxh5slum9ImbMybc9qwO15vmWBFKbQ",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/cars/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"message\": \"Car sucessfully deleted.\"\r\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eygg",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/cars/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"name\": \"JsonWebTokenError\",\r\n    \"message\": \"jwt malformed\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "destroy cars",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "p",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/cars/destroy/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"destroy",
+								"6"
+							]
+						},
+						"description": "StartFragment\n\nyaitu hanya bisa dilakukan oleh SuperAdmin dan Admin.\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "destroy cars",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlZWQtcnlhbkBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFk1M3ZvR0xmWUs5UXpHaGdsMm5lNU9wTGJ1aHlrSk05Qk1xdTB3eFBGd1ZqWmthRnF0TDBTIiwiaWF0IjoxNjUyNDcyMjMzfQ.dI2kwzz3t3R191AmpD8UqyhZG3gk7Z6YfufC1giDTX0",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/cars/destroy/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"destroy",
+										"5"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"message\": \"Car sucessfully destroyed.\"\r\n}"
+						},
+						{
+							"name": "destroy cars",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InppZGFuQG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkZHFaSzVLR2NNeklTZXU5bUo2WlBTT3BNU3FmQVNCeEVocklZNjIySDFIY3lvakV2MVZ4MlMiLCJpYXQiOjE2NTI0NzMwNjZ9.gMYypcTZPJwTNtxh5slum9ImbMybc9qwO15vmWBFKbQ",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/cars/destroy/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"destroy",
+										"6"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"message\": \"Car sucessfully destroyed.\"\r\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "p",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/cars/destroy/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"cars",
+										"destroy",
+										"6"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"name\": \"JsonWebTokenError\",\r\n    \"message\": \"jwt malformed\"\r\n}"
+						}
+					]
+				}
+			],
+			"description": "StartFragment\n\nFolder \"cars\" ini untuk request data mobil yang dilakukan oleh superAdmin, Admin, dan member.\n\n*   Terdapat request **Get All Cars** dapat dilakukan oleh SuperAdmin dan Admin, dan member.\n*   Terdapat request **Get Cars (True)** dapat dilakukan oleh user yang teregister SuperAdmin, Admin, dan Member.\n*   Terdapat request **Get Cars (False)** yaitu hanya bisa dilakukan oleh SuperAdmin dan Admin.\n*   Terdapat request **Add Car** yaitu hanya bisa dilakukan oleh SuperAdmin dan Admin.\n*   Terdapat request **Update Car** yaitu hanya bisa dilakukan oleh SuperAdmin dan Admin.\n*   Terdapat request **Delete Car** yaitu hanya bisa dilakukan oleh SuperAdmin dan Admin.\n*   Terdapat request **Destroy Car** yaitu hanya bisa dilakukan oleh SuperAdmin dan Admin.\n    \n\nEndFragment"
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "register admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlZWQtcnlhbkBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFk1M3ZvR0xmWUs5UXpHaGdsMm5lNU9wTGJ1aHlrSk05Qk1xdTB3eFBGd1ZqWmthRnF0TDBTIiwiaWF0IjoxNjUyNDY5MjYxfQ.3_VydMsqc5v7b2UVwDFJthN1Pdrj_JCvrLPysv2gzFo",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"zidan\",\r\n    \"class\": \"Admin\",\r\n    \"email\" : \"zidan@mail.com\",\r\n    \"password\": \"zidan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/register-admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"register-admin"
+							]
+						},
+						"description": "StartFragment\n\nHanya bisa diakses oleh superAdmin untuk melakukan registrasi admin,\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "register success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlZWQtcnlhbkBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFk1M3ZvR0xmWUs5UXpHaGdsMm5lNU9wTGJ1aHlrSk05Qk1xdTB3eFBGd1ZqWmthRnF0TDBTIiwiaWF0IjoxNjUyNDY5MjYxfQ.3_VydMsqc5v7b2UVwDFJthN1Pdrj_JCvrLPysv2gzFo",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"zidan\",\r\n    \"class\": \"Admin\",\r\n    \"email\" : \"zidan@mail.com\",\r\n    \"password\": \"zidan\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/register-admin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"register-admin"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"message\": \"User added succesfully.\",\r\n    \"data\": {\r\n        \"id\": 3,\r\n        \"nama\": \"zidan\",\r\n        \"class\": \"Admin\",\r\n        \"email\": \"zidan@mail.com\",\r\n        \"password\": \"$2b$10$dqZK5KGcMzISeu9mJ6ZPSOpMSqfASBxEhrIY622H1HcyojEv1Vx2S\",\r\n        \"updatedAt\": \"2022-05-13T19:15:17.280Z\",\r\n        \"createdAt\": \"2022-05-13T19:15:17.280Z\"\r\n    }\r\n}"
+						},
+						{
+							"name": "register failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJ",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"winda\",\r\n    \"class\": \"Admin\",\r\n    \"email\" : \"winda@mail.com\",\r\n    \"password\": \"winda\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/register-admin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"register-admin"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"name\": \"JsonWebTokenError\",\r\n    \"message\": \"jwt must be provided\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "login user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"seed-ryan@mail.com\",\r\n    \"password\": \"ryan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"login"
+							]
+						},
+						"description": "StartFragment\n\nSetelah melakukan registrasi, lakukan login berdasarkan email dan password yang telah didaftarkan. Setelah login, nanti akan diberikan token untuk dapat digunakan CRUD untuk data mobil ( dimana CRUD ini hanya untuk Super Admin dan Admin) dan melihat data mobil yang tersedia (berlaku untuk semua user yang telah teregister).\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "request success login superAdmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\" : \"seed-ryan@mail.com\",\r\n    \"password\": \"ryan\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 200,\r\n    \"message\": \"User found.\",\r\n    \"data\": {\r\n        \"user\": {\r\n            \"id\": 1,\r\n            \"nama\": \"Seed-ryan\",\r\n            \"class\": \"SuperAdmin\",\r\n            \"email\": \"seed-ryan@mail.com\",\r\n            \"createdAt\": \"2022-05-13T19:10:46.825Z\",\r\n            \"updatedAt\": \"2022-05-13T19:10:46.825Z\"\r\n        },\r\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlZWQtcnlhbkBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFk1M3ZvR0xmWUs5UXpHaGdsMm5lNU9wTGJ1aHlrSk05Qk1xdTB3eFBGd1ZqWmthRnF0TDBTIiwiaWF0IjoxNjUyNDY5MjYxfQ.3_VydMsqc5v7b2UVwDFJthN1Pdrj_JCvrLPysv2gzFo\"\r\n    }\r\n}"
+						},
+						{
+							"name": "request success login admin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\" : \"zidan@mail.com\",\r\n    \"password\": \"zidan\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 200,\r\n    \"message\": \"User found.\",\r\n    \"data\": {\r\n        \"user\": {\r\n            \"id\": 3,\r\n            \"nama\": \"zidan\",\r\n            \"class\": \"Admin\",\r\n            \"email\": \"zidan@mail.com\",\r\n            \"createdAt\": \"2022-05-13T19:15:17.280Z\",\r\n            \"updatedAt\": \"2022-05-13T19:15:17.280Z\"\r\n        },\r\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InppZGFuQG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkZHFaSzVLR2NNeklTZXU5bUo2WlBTT3BNU3FmQVNCeEVocklZNjIySDFIY3lvakV2MVZ4MlMiLCJpYXQiOjE2NTI0Njk0Mzl9.cwxFTJ2rDvdwUP5EvgZ27XbZACItsR6EkiPy47GbCMg\"\r\n    }\r\n}"
+						},
+						{
+							"name": "request failed (not match)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 404,\r\n    \"message\": \"Email and password not match.\"\r\n}"
+						},
+						{
+							"name": "request failed (not found)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\" : \"k\",\r\n    \"password\": \"ryan\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 404,\r\n    \"message\": \"User not found.\"\r\n}"
+						},
+						{
+							"name": "request success login member",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\" : \"adun@mail.com\",\r\n    \"password\": \"adun\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 200,\r\n    \"message\": \"User found.\",\r\n    \"data\": {\r\n        \"user\": {\r\n            \"id\": 4,\r\n            \"nama\": \"adun\",\r\n            \"class\": \"Member\",\r\n            \"email\": \"adun@mail.com\",\r\n            \"createdAt\": \"2022-05-13T19:24:47.637Z\",\r\n            \"updatedAt\": \"2022-05-13T19:24:47.637Z\"\r\n        },\r\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkdW5AbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRFbDJHb3M2WjRIdGNTQWpBd0UxWVouMFkyVndoR3ZXektBdVNNdlJRdUFBaTEzUUpjLjFwZSIsImlhdCI6MTY1MjQ3MDAyNn0.iXKRiwna8TeoSuGU3SXpyoo1pxNq5AFchZNs45k84RM\"\r\n    }\r\n}"
+						}
+					]
+				},
+				{
+					"name": "register member",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"adun\",\r\n    \"class\": \"Admin\",\r\n    \"email\" : \"adun@mail.com\",\r\n    \"password\": \"adun\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/register-member",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"register-member"
+							]
+						},
+						"description": "StartFragment\n\nBisa diakses oleh siapa saja (superAdmin, admin, maupun member) untuk registrasi sebagai member.\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "register success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"adun\",\r\n    \"class\": \"Admin\",\r\n    \"email\" : \"adun@mail.com\",\r\n    \"password\": \"adun\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/register-member",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"register-member"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"message\": \"User added succesfully.\",\r\n    \"data\": {\r\n        \"id\": 4,\r\n        \"nama\": \"adun\",\r\n        \"class\": \"Member\",\r\n        \"email\": \"adun@mail.com\",\r\n        \"password\": \"$2b$10$El2Gos6Z4HtcSAjAwE1YZ.0Y2VwhGvWzKAuSMvRQuAAi13QJc.1pe\",\r\n        \"updatedAt\": \"2022-05-13T19:24:47.637Z\",\r\n        \"createdAt\": \"2022-05-13T19:24:47.637Z\"\r\n    }\r\n}"
+						},
+						{
+							"name": "register failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/register-member",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"register-member"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n\r\n}"
+						}
+					]
+				},
+				{
+					"name": "current user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/users/info-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"info-user"
+							]
+						},
+						"description": "StartFragment\n\nUntuk dapat mengetahui user milik siapa yang sedang login, token yang didapatkan dari login sebelumnya diletakkan di header untuk dapat dilihat siapa pemilik token tersebut.\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "request success member",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkdW5AbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRFbDJHb3M2WjRIdGNTQWpBd0UxWVouMFkyVndoR3ZXektBdVNNdlJRdUFBaTEzUUpjLjFwZSIsImlhdCI6MTY1MjQ3MDAyNn0.iXKRiwna8TeoSuGU3SXpyoo1pxNq5AFchZNs45k84RM",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/users/info-user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"info-user"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 200,\r\n    \"message\": \"User has been found.\",\r\n    \"data\": {\r\n        \"id\": 4,\r\n        \"nama\": \"adun\",\r\n        \"class\": \"Member\",\r\n        \"email\": \"adun@mail.com\",\r\n        \"password\": \"$2b$10$El2Gos6Z4HtcSAjAwE1YZ.0Y2VwhGvWzKAuSMvRQuAAi13QJc.1pe\",\r\n        \"createdAt\": \"2022-05-13T19:24:47.637Z\",\r\n        \"updatedAt\": \"2022-05-13T19:24:47.637Z\"\r\n    }\r\n}"
+						},
+						{
+							"name": "request success admin",
+							"originalRequest": {
+								"method": "GET",
+								"header": []
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "request success superAdmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlZWQtcnlhbkBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFk1M3ZvR0xmWUs5UXpHaGdsMm5lNU9wTGJ1aHlrSk05Qk1xdTB3eFBGd1ZqWmthRnF0TDBTIiwiaWF0IjoxNjUyNDcwMzE1fQ.y4ov4wcTToLd8MeuYgjowNmFjvH4lQeiBBMxBCKUI8U",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/users/info-user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"info-user"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 200,\r\n    \"message\": \"User has been found.\",\r\n    \"data\": {\r\n        \"id\": 1,\r\n        \"nama\": \"Seed-ryan\",\r\n        \"class\": \"SuperAdmin\",\r\n        \"email\": \"seed-ryan@mail.com\",\r\n        \"password\": \"$2b$10$Y53voGLfYK9QzGhgl2ne5OpLbuhykJM9BMqu0wxPFwVjZkaFqtL0S\",\r\n        \"createdAt\": \"2022-05-13T19:10:46.825Z\",\r\n        \"updatedAt\": \"2022-05-13T19:10:46.825Z\"\r\n    }\r\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJ",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/users/info-user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"info-user"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"name\": \"JsonWebTokenError\",\r\n    \"message\": \"jwt malformed\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "all user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhb",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						},
+						"description": "StartFragment\n\nHanya bisa diakses oleh Super Admin dan Admin untuk melihat data user\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "request success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlZWQtcnlhbkBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFk1M3ZvR0xmWUs5UXpHaGdsMm5lNU9wTGJ1aHlrSk05Qk1xdTB3eFBGd1ZqWmthRnF0TDBTIiwiaWF0IjoxNjUyNDcwNTgzfQ.a0amj00w7SBz3XG8nXjz239yq13WeXmFLZj_u7I8EEo",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"status\": 201,\r\n    \"data\": [\r\n        {\r\n            \"id\": 1,\r\n            \"nama\": \"Seed-ryan\",\r\n            \"class\": \"SuperAdmin\",\r\n            \"email\": \"seed-ryan@mail.com\",\r\n            \"password\": \"$2b$10$Y53voGLfYK9QzGhgl2ne5OpLbuhykJM9BMqu0wxPFwVjZkaFqtL0S\",\r\n            \"createdAt\": \"2022-05-13T19:10:46.825Z\",\r\n            \"updatedAt\": \"2022-05-13T19:10:46.825Z\"\r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"nama\": \"Seed-rama\",\r\n            \"class\": \"SuperAdmin\",\r\n            \"email\": \"seed-rama@mail.com\",\r\n            \"password\": \"$2b$10$QRWe0lUb.Vwy/p0eAloWnOTqpPlYKskGTls0i3Kip2nZdcEsT.Fcu\",\r\n            \"createdAt\": \"2022-05-13T19:10:46.825Z\",\r\n            \"updatedAt\": \"2022-05-13T19:10:46.825Z\"\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"nama\": \"zidan\",\r\n            \"class\": \"Admin\",\r\n            \"email\": \"zidan@mail.com\",\r\n            \"password\": \"$2b$10$dqZK5KGcMzISeu9mJ6ZPSOpMSqfASBxEhrIY622H1HcyojEv1Vx2S\",\r\n            \"createdAt\": \"2022-05-13T19:15:17.280Z\",\r\n            \"updatedAt\": \"2022-05-13T19:15:17.280Z\"\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"nama\": \"adun\",\r\n            \"class\": \"Member\",\r\n            \"email\": \"adun@mail.com\",\r\n            \"password\": \"$2b$10$El2Gos6Z4HtcSAjAwE1YZ.0Y2VwhGvWzKAuSMvRQuAAi13QJc.1pe\",\r\n            \"createdAt\": \"2022-05-13T19:24:47.637Z\",\r\n            \"updatedAt\": \"2022-05-13T19:24:47.637Z\"\r\n        }\r\n    ]\r\n}"
+						},
+						{
+							"name": "request failed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhb",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"name\": \"JsonWebTokenError\",\r\n    \"message\": \"jwt malformed\"\r\n}"
+						}
+					]
+				}
+			],
+			"description": "StartFragment\n\nStartFragment\n\nFolder \"users\" yaitu request yang berkaitan dengan user Super Admin, Admin, dan Member.\n\nyaitu terdapat :\n\n*   Request **Register Admin** yang hanya bisa dilakukan oleh SuperAdmin (terdapat Seed yang sudah dibuat)\n*   Request **Get All Users** yang hanya bisa dilakukan oleh SuperAdmin dan Admin.\n*   Request **Register Member** dan **Login** yang bisa dilakukan oleh siapa saja (SuperAdmin, Admin, dan Member).\n*   Request **Current User** yang hanya bisa dilakukan oleh SuperAdmin, Admin, dan Member\n    \n\nEndFragment  \n\nEndFragment"
+		}
+	]
+}
